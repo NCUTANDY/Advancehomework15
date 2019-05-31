@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+int main(void)
+{
+char slogan1[]="Taiwan,Touch,Your,Heart";
+char slogan2[50];
+
+int num,num1=0 ,line;
+line=strlen(slogan1);
+
+ for(num=0;num<line;num++)
+ {
+ if(isalpha(slogan1[num])!=0||isspace(slogan1[num])!=0)
+ 
+ {slogan2[num1]=slogan1[num];
+ num1++;
+ }
+ }
+ puts(slogan2);
+system("PAUSE");
+return 0;	
+}
